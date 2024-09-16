@@ -148,13 +148,19 @@ will install the necessary libraries libraries
 
 Issue 1: ImportError: libpython3.8.so.1.0: cannot open shared object file: No such file or directory \
 Solution: \
-a) Create sym link to have libpython3.8 library, for this create a new conda env withpy3.8 first if you don't have python 3.8 \
-b) Go to conda/envs/envname/lib/python3.9/site-packages/pptk/libs/libz.so and rename the libz.so file or cut it and paste it somewhere safe, here we / will use the symbolic link of libpython3.8.so file \
-then   
+a) Create sym link to have libpython3.8 library, for this create a new conda env with Py3.8 first 
+```
+conda create -n test_env python=3.8
+```
+if you don't have python 3.8 \
+
+b) Go to conda/envs/envname/lib/python3.9/site-packages/pptk/libs/libz.so and rename the libz.so file or cut it and paste it somewhere safe.\
+ here we  will use the symbolic link of libpython3.8.so  file instead from the newly created conda environment with Py3.8 \
+then  we type the command based on the following syntax in the terminal  
 ```
 ln -s /home/{user_name}/anaconda3/envs/{env_name}/lib/libz.so.1 /home/{user_name}/anaconda3/envs/{env_name}/lib/python3.7/site-packages/pptk/libs/libz.so.1
 ```
-Example in this case:
+Example in this case of symlink of shared libraries from legion environment with Py 3.8 to mujoco_py environment with Py 3.9:
 ```
 ln -s /home/vishal/.miniconda3/envs/legion/lib/libz.so /home/vishal/.miniconda3/envs/mujoco_py/lib/python3.9/site-packages/pptk/libs/libz.so
 ```
