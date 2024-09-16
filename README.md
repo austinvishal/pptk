@@ -175,6 +175,11 @@ set debug=True
 ```
 (temporary fix) based on, [24](https://github.com/heremaps/pptk/issues/24) 
 
+Result of running the example should look like this:\
+<p align="center">
+![thumbnail](https://github.com/austinvishal/pptk/blob/pptk_view/resources/1.png)
+</p>
+
 ##### Mac
 
 Similar to building on Windows.
