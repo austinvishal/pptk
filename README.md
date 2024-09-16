@@ -136,7 +136,7 @@ extract it.
  Here is the wheel for convenience, just download, extract and proceed to step 3:\
  [pptkcp39](https://github.com/austinvishal/pptk/blob/pptk_view/resources/pptk-0.1.1-cp39-none-manylinux2014_x86_64.zip) 
 3. For installation inside conda environment
-activate your conda environment, go to the downloaded folder where extracted file is and 
+activate your conda environment, go to the downloaded folder where extracted file is and type the command in the terminal
 ```
 pip3 install  ./pptk-0.1.0-cp39-none-manylinux1_x86_64.whl
 ```
