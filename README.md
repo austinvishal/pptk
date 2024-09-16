@@ -132,7 +132,9 @@ For Conda Users with Python 3.9 and Ubuntu 22.04 (To be precise Miniconda 24.7.1
 1. Download the zip file from first comment [45](https://github.com/heremaps/pptk/pull/45) in the issue
 extract it.
 2. Rename 38 to 39 for your python3.9 version inside the extracted folder \
- or Here is the wheel for convenience, just download, extract and proceed to step 3:\
+ or \
+ 
+ Here is the wheel for convenience, just download, extract and proceed to step 3:\
  [pptkcp39](https://github.com/austinvishal/pptk/blob/pptk_view/resources/pptk-0.1.1-cp39-none-manylinux2014_x86_64.zip) 
 3. For installation inside conda environment
 activate your conda environment, go to the downloaded folder where extracted file is and 
