@@ -143,11 +143,11 @@ will install the necessary libraries libraries
 
 # Issues faced
 
-Issue 1: ImportError: libpython3.8.so.1.0: cannot open shared object file: No such file or directory /
-Solution: /
-a) Create sym link to have libpython3.8 library, for this create a new conda env withpy3.8 first if you don't have python 3.8 /
-b) Go to conda/envs/envname/lib/python3.9/site-packages/pptk/libs/libz.so and rename the libz.so file or cut it and paste it somewhere safe, here we / will use the symbolic link of libpython3.8.so file /
-then   /
+Issue 1: ImportError: libpython3.8.so.1.0: cannot open shared object file: No such file or directory \
+Solution: \
+a) Create sym link to have libpython3.8 library, for this create a new conda env withpy3.8 first if you don't have python 3.8 \
+b) Go to conda/envs/envname/lib/python3.9/site-packages/pptk/libs/libz.so and rename the libz.so file or cut it and paste it somewhere safe, here we / will use the symbolic link of libpython3.8.so file \
+then   \
 ```
 ln -s /home/{user_name}/anaconda3/envs/{env_name}/lib/libz.so.1 /home/{user_name}/anaconda3/envs/{env_name}/lib/python3.7/site-packages/pptk/libs/libz.so.1
 ```
@@ -165,8 +165,8 @@ c) Now use the example given in the github and save it as pptkexample1.py to vie
 ```
 python pptkexample1.py
 ```
-Issue 2: The viewer pops up and closes /
-Solution:  /
+Issue 2: The viewer pops up and closes \
+Solution:  \
 After line 52 in viewer.py, set debug=True  (temporary fix) based on, [24](https://github.com/heremaps/pptk/issues/24) 
 
 ##### Mac
