@@ -169,7 +169,11 @@ python pptkexample1.py
 ```
 Issue 2: The viewer pops up and closes \
 Solution:  \
-After line 52 in viewer.py, set debug=True  (temporary fix) based on, [24](https://github.com/heremaps/pptk/issues/24) 
+After line 52 in viewer.py, 
+```
+set debug=True
+```
+(temporary fix) based on, [24](https://github.com/heremaps/pptk/issues/24) 
 
 ##### Mac
 
